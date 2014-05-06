@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*---------CSS RESET: */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+
+
+/* Set HTML5 semantic elements as blocks for older browsers (not including IE8 */
+header, section, footer, aside, nav, main, article, figure{ 
+	display: block; 
+}
+
+/* ----------- All styles relating to the first block on the home page */
+div#one{
+	width:100%;
+	background:green;
+	max-height:960px;
+	min-height:150px; /* Set this based on text/images that go in div#one */
+}
+
+#scroll-down-container{
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 900;
+}
+
+#scroll-down-container a{
+	display:block;
+	margin:0 auto;
+	height:50px;
+	width:50px;
+	border:1px solid white;
+	border-radius:50%;
+	background-repeat:no-repeat;
+	background-image:url(assets/down-arrow.png);
+	background-size:40px 40px;
+	background-position:center center;
+	transition:0.2s ease-in;
+	-webkit-transition:0.2s ease-in;
+}
+
+#scroll-down-container a:hover{
+	border:1px solid red;
+	background-color:red;
+}
+
+/* ----------- All styles relating to the second block on the home page */
+
+div#two{
+	width:100%;
+	background:red;
+	height:400px;
+}
+
+/* ----------- All styles relating to the third block on the home page */
+
+div#three{
+	width:100%;
+	background:black;
+	height:200px;
+}
+
