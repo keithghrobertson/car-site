@@ -24,6 +24,8 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+	font-family:Open Sans, Arial, Helvetica, sans-serif;
+	background-color:#27333d;
 }
 
 
@@ -33,12 +35,65 @@ header, section, footer, aside, nav, main, article, figure{
 	display: block; 
 }
 
+#nav {
+	display: block;
+	position: fixed;
+	left: -260px;
+	top: 0;
+	width: 260px;
+	height: 100%;
+	text-align: center;
+	background: #27333d;
+	z-index: 998;
+}
+
+#nav-button {
+	position: absolute;
+	display: block;
+	padding: 0;
+	top: 48%;
+	right: -35px;
+	font-size: 1.8em;
+	text-align: center;
+	color: #d7d7d7;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+	z-index: 999;
+	cursor:pointer;
+}
+
+#nav-button:hover{
+	color:red;	
+}
+
+#page-wrapper{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+}
+
 /* ----------- All styles relating to the first block on the home page */
-div#one{
+#one{
+	position:relative;
 	width:100%;
-	background:green;
 	max-height:960px;
-	min-height:150px; /* Set this based on text/images that go in div#one */
+	min-height:250px; /* Set this based on text/images that go in div#one */
+	color:#fff;
+	text-align:center;
+	background:url(assets/header-edit.jpg) 50% 0 no-repeat;
+}
+
+#one h1{
+	font-size:8em;
+	margin-bottom:0px;
+	padding:15px;
+	line-height:0;
+	padding-top:450px;
+	margin-bottom:50px;
 }
 
 #scroll-down-container{
@@ -74,7 +129,7 @@ div#one{
 div#two{
 	width:100%;
 	background:red;
-	height:400px;
+	height:600px;
 }
 
 /* ----------- All styles relating to the third block on the home page */
@@ -82,6 +137,6 @@ div#two{
 div#three{
 	width:100%;
 	background:black;
-	height:200px;
+	height:700px;
 }
 

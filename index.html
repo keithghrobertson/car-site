@@ -2,6 +2,8 @@
 <html>
     <head>
     	<meta charset="UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.4.custom.min.css" type="text/css"/>
         <script src="js/jquery-1.10.2.js"></script>
@@ -10,24 +12,35 @@
     </head>
 	<body>
     
-    <div id="one">
-    	<h1>Title</h1>
-        <h2>subtitle</h2>
-        <p>words</p>
-        <div id="scroll-down-container">
-        	<a href="" id="scroll-down" title=""></a>
-        </div>
-    </div>
+        <header id="nav">
+            Hello
     
-    <div id="two">
-    	Content2
-    </div>
-    
-    <div id="three">
-    	Content3
-    </div>
-
-
+            <a id="nav-button">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        
+        <div id="page-wrapper">
+        
+        <section id="one" class="story" data-speed="8" data-type="background">
+			<h1>Welcome</h1>
+            <h2>To WhoWouldWin</h2>
+            <p>words</p>
+            <div id="scroll-down-container">
+                <a href="" id="scroll-down" title=""></a>
+            </div>
+		</section>
+  
+            <div id="two">
+                Content2
+            </div>
+            
+            <div id="three">
+                Content3
+            </div>
+        
+        </div><!--#page-wrapper-->
+		<script type="text/javascript" src="js/script2.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
-	<script type="text/javascript" src="js/script.js"></script>
 </html>
